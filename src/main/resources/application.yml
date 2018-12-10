@@ -1,5 +1,8 @@
 server:
   port: 1656
+  servlet:
+    #项目名称
+    context-path: /skybook
 
 spring:
   datasource:
