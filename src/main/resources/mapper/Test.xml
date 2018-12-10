@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.rabbit.dao.TestDao">
+    <sql id="BASE_TABLE">
+        test
+    </sql>
+
+    <sql id="BASE_COLUMN">
+        id , name
+    </sql>
+
+    <select id="getData"
+            resultType="com.rabbit.model.TestModel">
+        SELECT
+        <include refid="BASE_COLUMN" />
+        FROM
+        <include refid="BASE_TABLE" />
+    </select>
+</mapper>
