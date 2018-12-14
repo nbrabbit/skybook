@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SBookRecordDao {
-    SBookRecord insertRecord();
+    void insertRecord(SBookRecord sBookRecord);
 }

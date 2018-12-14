@@ -13,7 +13,7 @@ public class SBookRecordServiceImpl implements SBookRecordService {
     SBookRecordDao sBookRecordDao;
 
     @Override
-    public SBookRecord insertRecord(SBookRecord sBookRecord) {
-        return sBookRecordDao.insertRecord();
+    public void insertRecord(SBookRecord sBookRecord) {
+        sBookRecordDao.insertRecord(sBookRecord);
     }
 }

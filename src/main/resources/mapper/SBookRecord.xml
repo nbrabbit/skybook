@@ -10,8 +10,10 @@
     </sql>
     <insert id="insertRecord" parameterType="com.rabbit.model.SBookRecord">
         insert into
-            t_skybookrecord(<include refid="BASE_COLUMN" />)
-        values ('001','111','222','333','444')
---         values (#{id},#{skybookid},#{userip},#{invoketime})
+            t_skybookrecord( id, skybookid, userip, invoketime)
+        values (#{id,jdbcType=VARCHAR},#{skybookid,jdbcType=VARCHAR},#{userip,jdbcType=VARCHAR},#{invoketime,jdbcType=VARCHAR})
+        <!--<selectKey resultClass="java.lang.String" keyProperty="id" >-->
+            <!--SELECT @@IDENTITY AS ID-->
+        <!--</selectKey>-->
     </insert>
 </mapper>
