@@ -6,7 +6,7 @@
     </sql>
 
     <sql id="BASE_COLUMN">
-        id, title, text, author, type, createtime, statue
+        id, title, text, source, author, type, createtime, statue
     </sql>
 
     <select id="getASkyBookDaoRandom"

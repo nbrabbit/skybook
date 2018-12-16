@@ -1,5 +1,6 @@
 package com.rabbit.controller;
 
+import com.rabbit.bean.LoginBean;
 import com.rabbit.model.AdminUser;
 import com.rabbit.service.AdminLoginService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,7 @@ public class AdminLoginController {
     AdminLoginService adminLoginService;
 
     @RequestMapping("/adminLogin")
-    public String adminLogin(@RequestBody AdminUser adminUser){
+    public LoginBean adminLogin(@RequestBody AdminUser adminUser){
         return adminLoginService.Login(adminUser);
     }
 }

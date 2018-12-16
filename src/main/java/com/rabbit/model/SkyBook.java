@@ -1,13 +1,14 @@
 package com.rabbit.model;
 
 public class SkyBook {
-    public String id;
-    public String title;
-    public String text;
-    public String author;
-    public String type;
-    public String createtime;
-    public String statue;
+    private String id;
+    private String title;
+    private String text;
+    private String source;
+    private String author;
+    private String type;
+    private String createtime;
+    private String statue;
 
     public String getId() {
         return id;
@@ -65,16 +66,11 @@ public class SkyBook {
         this.statue = statue;
     }
 
-    @Override
-    public String toString() {
-        return "SkyBook{" +
-                "id='" + id + '\'' +
-                ", title='" + title + '\'' +
-                ", text='" + text + '\'' +
-                ", author='" + author + '\'' +
-                ", type='" + type + '\'' +
-                ", createtime='" + createtime + '\'' +
-                ", statue='" + statue + '\'' +
-                '}';
+    public String getSource() {
+        return source;
+    }
+
+    public void setSource(String source) {
+        this.source = source;
     }
 }

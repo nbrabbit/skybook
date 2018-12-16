@@ -36,7 +36,7 @@ public class SkyBookController {
         SBookRecord sBookRecord = new SBookRecord();
         sBookRecord.setId(Util.uuid());
         sBookRecord.setUserip(userBean.getUserIp());
-        sBookRecord.setSkybookid(sbook.id);
+        sBookRecord.setSkybookid(sbook.getId());
         sBookRecord.setInvoketime(Util.getTime());
         sBookRecordService.insertRecord(sBookRecord);
 

@@ -1,7 +1,8 @@
 package com.rabbit.service;
 
+import com.rabbit.bean.LoginBean;
 import com.rabbit.model.AdminUser;
 
 public interface AdminLoginService {
-    String Login(AdminUser adminUser);
+    LoginBean Login(AdminUser adminUser);
 }

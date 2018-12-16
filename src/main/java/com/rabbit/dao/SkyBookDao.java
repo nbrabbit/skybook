@@ -9,4 +9,5 @@ public interface SkyBookDao {
      * 随机获取一条天书
      */
     SkyBook getASkyBookDaoRandom();
+
 }
