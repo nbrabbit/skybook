@@ -8,6 +8,7 @@ public class LoginBean {
     private String userid;
     private String username;
     private String allowLogin;
+    private String loginTime;
     private String msg;
 
     public String getUserid() {
@@ -40,5 +41,13 @@ public class LoginBean {
 
     public void setMsg(String msg) {
         this.msg = msg;
+    }
+
+    public String getLoginTime() {
+        return loginTime;
+    }
+
+    public void setLoginTime(String loginTime) {
+        this.loginTime = loginTime;
     }
 }
